@@ -2,15 +2,15 @@
   <header class="header">
     <div class="logo">📚 Educonnect</div>
     <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Courses</a>
+      <router-link to="/">Home</router-link>
+      <router-link to="/courses">Courses</router-link>
       <a href="#">About</a>
     </nav>
    </header>
 </template>
 
 <script setup>
-// You can add props or emit events later if needed
+
 </script>
 
 <style scoped>
