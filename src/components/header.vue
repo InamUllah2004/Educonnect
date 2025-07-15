@@ -1,0 +1,51 @@
+<template>
+  <header class="header">
+    <div class="logo">📚 Educonnect</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About</a>
+    </nav>
+   </header>
+</template>
+
+<script setup>
+// You can add props or emit events later if needed
+</script>
+
+<style scoped>
+.header {
+ position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #221358;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  gap:950px;
+  width: 131%;
+  margin-left:-208px;
+  margin-top:-440px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left:-70px;
+}
+
+.nav a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  gap:100px;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+</style>
