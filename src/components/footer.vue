@@ -32,14 +32,14 @@
 
 <style scoped>
 .footer {
-    position: absolute;
+  position: absolute;
   background-color: #1d0b53;
   color: white;
   padding: 40px 60px;
   font-family: 'Segoe UI', sans-serif;
-  margin-top: 2700px;
+  margin-top: 2300px;
   width: 92%;
-  margin-left: -180px;
+  left:0
 }
 
 .footer-content {

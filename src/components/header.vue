@@ -15,7 +15,7 @@
 
 <style scoped>
 .header {
- position: relative;
+ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,9 +24,12 @@
   color: white;
   font-family: 'Segoe UI', sans-serif;
   gap:950px;
-  width: 131%;
-  margin-left:-208px;
-  margin-top:-440px;
+  width: 97%;
+  /* margin-left:-208px;
+  margin-top:-440px; */
+  top:0;
+  left:0;
+  right:0
 }
 
 .logo {

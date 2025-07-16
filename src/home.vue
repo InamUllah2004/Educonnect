@@ -9,11 +9,12 @@
     Educonnect offers a wide range of programming resources at no cost. Get access to course notes, YouTube video recommendations, and connect with teachers to enhance your learning. Whether you're a beginner or looking to advance, Educonnect makes education accessible and free for all.
     Start learning today!
    </p>
-   <button class="btn1">Start today</button>
+   <button @click="hanldeClick" class="btn1">Start today</button>
    </div>
     
    <div class="img">
    <img src="./assets/pic1.png" alt="Learning Image" />
+
     </div>
    
     <div class="con2">
@@ -111,6 +112,12 @@
 <script setup>
    import Header from './components/header.vue'
    import Footer from './components/footer.vue'
+   import { useRouter } from 'vue-router'
+   const router=useRouter();
+
+   function hanldeClick(){
+     router.push("/courses")
+   }
 </script>
 
 
@@ -119,10 +126,10 @@
     position:absolute;
     background-color: white;
     width: 100%;
-    margin-left:-180px;
-    margin-top:0;
     height:600px;
     background-color: #221358;
+    margin-top:-370px;
+    left:0;
 }
 .text{
     position:absolute;
@@ -341,8 +348,8 @@
   position: absolute;
   background-color: #ffffff;
   width: 100%;
-  margin-top: 2100px;
-  margin-left: -180px;
+  margin-top: 1710px;
+  left:0;
   height: 600px;
   display: flex;
   justify-content: space-between;
