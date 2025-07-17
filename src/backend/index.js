@@ -43,7 +43,7 @@ app.get('/api/refine', async (req, res) => {
               parts: [
                 {
                   text: `The user wants to study: "${query}". 
-1. Give me exactly 5 subtopics that are essential to understand this topic. 
+1. Give me all essentials subtopics that are essential to understand this topic. 
 2. In the last line, return only the correct and complete name of the topic the user meant — in simple, unambiguous form (e.g., "C++", "Web Development", "Machine Learning", etc). 
 Don't explain anything, just give the list.
 `,
@@ -64,8 +64,8 @@ Don't explain anything, just give the list.
 
     // Split into lines
     const lines = rawText.split('\n').map(l => l.trim()).filter(Boolean);
-    const subtopics = lines.slice(0, 5);
-    const actualTopic = lines[5];
+    const actualTopic = lines[lines.length - 1];
+    const subtopics = lines.slice(0, lines.length - 1);
 
 const videoResults = [];
 
