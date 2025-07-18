@@ -103,8 +103,6 @@ for (const topic of subtopics) {
     });
   }
 }
-
-
     // Send response
     res.json({
       topic: actualTopic,

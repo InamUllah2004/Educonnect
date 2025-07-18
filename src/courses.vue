@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <Header/>
   <div class="con1">
     <h2 class="heading">Please type what you want to study today</h2>
 
@@ -79,11 +79,9 @@ const searchCourses = async () => {
   position: relative;
   width: 100vw;
   background-color: #221358;
-
   margin-top: 100px; 
   height: 100%;
   min-height: 800px;
-  /* padding: 30px; */
   text-align: center;
 }
 
